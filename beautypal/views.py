@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Room
+from .forms import RoomForm
 
 
 #rooms = [
@@ -18,7 +19,16 @@ def room(request, pk):
     room = Room.objects.get(id=pk)
     context = {'room': room}
     return render(request, 'beautypal/room.html', context)
+
+def createRoom(request):
+    form = RoomForm()
+    if request.method == 'POST':
+        print(request.POST)
+    context = {'form': form}
+    return render(request, 'beautypal/room_form.html', context)
     
     
 def navbar(request):
-    return render(request, 'navbar.html')# Create your views here.
+    return render(request, 'navbar.html')
+    
+    # Create your views here.
