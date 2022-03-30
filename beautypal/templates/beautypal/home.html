@@ -6,9 +6,8 @@
     .home-container {
 
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr 1fr;
     }
-    
 </style>
 
 <div class="home-container">
@@ -22,10 +21,10 @@
         </div>
 
         {% for topic in topics %}
-        
-            <div>
-                <a href="{% url 'home'%}?q={{topic.name}}">{{topic.name}}</a>
-            </div>
+
+        <div>
+            <a href="{% url 'home'%}?q={{topic.name}}">{{topic.name}}</a>
+        </div>
 
 
         {% endfor %}
@@ -38,22 +37,44 @@
 
         <div>
             {% for room in rooms %}
-                <div>
-                    {% if request.user == room.host %}
-                    <a href="{% url 'update-room' room.id %}">Edit</a>
-                    <a href="{% url 'delete-room' room.id %}">Delete</a>
-                    {% endif %}
-                    
-                    <span>@{{room.host.username}}</span>
-                    <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
-                    <small>{{room.topic.name}}</small>
-                    <hr>
-                </div> 
-                
-                
+            <div>
+                {% if request.user == room.host %}
+                <a href="{% url 'update-room' room.id %}">Edit</a>
+                <a href="{% url 'delete-room' room.id %}">Delete</a>
+                {% endif %}
+
+                <span>@{{room.host.username}}</span>
+                <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+                <small>{{room.topic.name}}</small>
+                <hr>
+            </div>
+
+
             {% endfor %}
         </div>
 
+
+    </div>
+
+
+    <div>
+        <h3>Activity Feed</h3>
+        <hr>
+
+        {% for message in room_messages %}
+
+        <div>
+            <small>@{{message.user}} {{message.created|timesince}} ago</small>
+            <small>reply to "{{message.room}}"</small>
+
+            <p>{{message}}</p>
+            {% if request.user == message.user %}
+            <a href="{% url 'delete-message' message.id %}">Delete</a>
+            {% endif%}
+            <hr>
+        </div>
+
+        {% endfor %}
 
     </div>
 
