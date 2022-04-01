@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from .models import Room, Topic, Message
-from .forms import RoomForm
+from .forms import RoomForm, UserForm
 
 
 # rooms = [
@@ -113,16 +113,21 @@ def userProfile(request, pk):
 @login_required(login_url='login')
 def createRoom(request):
     form = RoomForm()
+    topics = Topic.objects.all()
 
     if request.method == 'POST':
-        form = RoomForm(request.POST)
-        if form.is_valid():
-            room = form.save(commit=False)
-            room.host = request.user
-            room.save()
-            return redirect('home')
+        topic_name = request.POST.get('topic')
+        topic, created = Topic.objects.get_or_create(name=topic_name)
+        
+        Room.objects.create(
+            host=request.user,
+            topic=topic,
+            name=request.POST.get('name'),
+            description=request.POST.get('description'),
+        )
+        return redirect('home')
 
-    context = {'form': form}
+    context = {'form': form, 'topics' : topics}
     return render(request, 'beautypal/room_form.html', context)
     
     
@@ -134,17 +139,21 @@ def navbar(request):
 def updateRoom(request, pk):
     room = Room.objects.get(id=pk)
     form = RoomForm(instance=room)
+    topics = Topic.objects.all()
 
     if request.user != room.host:
         return HttpResponse('You need permission for this task!')
 
     if request.method == 'POST':
-        form = RoomForm(request.POST, instance=room)
-        if form.is_valid():
-            form.save()
-            return redirect('home')
+        topic_name = request.POST.get('topic')
+        topic, created = Topic.objects.get_or_create(name=topic_name)
+        room.name = request.POST.get('name')
+        room.topic = topic
+        room.description = request.POST.get('description')
+        room.save()
+        return redirect('home')
     
-    context = {'form': form}
+    context = {'form': form, 'topics' : topics, 'room' : room}
     return render(request, 'beautypal/room_form.html', context)
 
 
@@ -173,6 +182,32 @@ def deleteMessage(request, pk):
         return redirect('home')
     return render(request, 'beautypal/delete.html', {'obj': message})   
 
+
+
+@login_required(login_url='login')
+def updateUser(request):
+    user = request.user
+    form = UserForm(instance=user)
+
+    if request.method == 'POST':
+        form = UserForm(request.POST, request.FILES, instance=user)
+        if form.is_valid():
+            form.save()
+            return redirect('user-profile', pk=user.id)
+
+    return render(request, 'beautypal/update-user.html', {'form': form})
+
+    
+    #user = request.user
+    #form = UserForm(instance=user)
+
+    #if request.method == 'POST':
+        #form = UserForm(request.POST, request.FILES, instance=user)
+        #if form.is_valid():
+            #form.save()
+            #return redirect('user-profile', pk=user.id)
+
+    
     
 
     
