@@ -1,5 +1,8 @@
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework.serializers import ModelSerializer
 from base.models import Room
-from .serializers import RoomSerializer
-from base.api import serializers
+
+
+class RoomSerializer(ModelSerializer):
+    class Meta:
+        model = Room
+        fields = '__all__'

@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'beautypal.apps.BeautypalConfig',
 
+
+    'base.apps.BaseConfig',
+
+    'rest_framework',
+
+
 ]
 
 MIDDLEWARE = [
