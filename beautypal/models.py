@@ -1,6 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
+
+avatar = models.ImageField(null=True, default="avatar.svg")
+
 # Create your models here.
 
 class Topic(models.Model):
