@@ -8,6 +8,7 @@
 [View the live project here](https://lukyhet.github.io/Project_Four/)
 
 
+
 ## Introduction
 
 Our full stack project  is called 'BeautyPal'. It was made to provide a specialized social network for those interested in beauty including sobjects like haircare, makeup, skincare, face yoga. The target audience is those who love beauty and want to want to share and learn about techniques, products, routines and more.
@@ -16,6 +17,7 @@ Our full stack project  is called 'BeautyPal'. It was made to provide a speciali
 
 ![Image of the BeautyPal](static/readme_files-userview/.png)
 
+
 </details>
 
 Movie Trivia was created for social purposes. It has groups created to discuss different topics related to beauty, like haircare, skincare, best products, etc.  The topic browse and activity feed are designed to facilitate the easy access to the information shared inside the groups. The users can create a username and password wich allows them to write messages, edit them, delete them and engage in interaction with other participants.
@@ -23,6 +25,7 @@ Movie Trivia was created for social purposes. It has groups created to discuss d
 Beautypal was made as the fourth milestone project to achieve the Diploma in Software Development at the Code Institute. 
 
 The purpose of this project is the Presentation of our first full stack project, and the main goal is to build an interactive site including both front-end and back-end that responds to the users actions, allowing them to actively engage with our website´s data from any electronic dispositive with internet access.
+
 
 
 ## UX
@@ -34,11 +37,13 @@ The user for this website is:
 - Beauty lovers who are engaged with skincre, haircare, makeup and other related topics in a healthy and productive way as a contribution to their own well-being and the community's well-being.
 
 
+
 #### User Goals
 
 - To participate and share user’s knowledge about beauty related topics with an extended community of peers who have similar interests.
 - Have a pleasent user experience when seeing an attractive website with contrasting colours as well as a clear design.
 - Have a clear display of all the features available in the website in different electronic dispositives through the websites responsiveness.
+
 
 
 ## Features 
@@ -73,6 +78,7 @@ The mentioned example of inspirational and educational site is [Traversy Media -
 Django allows to import themes, great features that were used in this project and adapted though, specially the color palette. The colors were chosen by the developer based on the hues of the 'mirror icon' used as the logo of "BeautyPal", the background is dark purple giving deepness and contrast to the other elements in the site. The rest of the colors in the palette are: A lighter shade of purple for the containers, blue for the accents and the search bar, and coral pink for the button and other accents, the text lighter shades of grey came from the theme. We must say that the colors hues and codes came from  palettes by palette ideas shared by  [canvas.com](https://www.canva.com/colors/color-palettes/everest-springs/). This combination creates harmonious colour scheme with good contrast, and femenine notes. 
 
 
+
 #### Typography
 
 The typography displayed in the website is given by the theme installed according to django's posibilities, the theme and all it's components are visible in (/static/styles/style.css). Somo of theme were adapted by the developer to match the UX, our inspiration and targeted population of the BeautyPal.
@@ -86,12 +92,14 @@ Several bugs were detected by developer tools. The bigest one happened when tryi
 Other types pf bugs detected were related to typos and indentation problems, the code was fixed by correcting it.
 
 
+
 ### Features to Implement in the future
 
 - **Notifications**
      - Picture uploading would allow the users to personalize their profiles even more and would make it more "real" social network looking.
      - Notification service for interactions.
      
+
 
 ## Main Languages Used
 
@@ -104,7 +112,6 @@ Other types pf bugs detected were related to typos and indentation problems, the
 
 
 ### Frameworks, Libraries & Programs Used
-
 
 - [GitPod](https://gitpod.io/ "Link to GitPod homepage")
      - GitPod was as workspace for writing code,
@@ -132,11 +139,14 @@ Other types pf bugs detected were related to typos and indentation problems, the
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate all the code of this repository and every warning was corrected until the code came up clean in every validator mentioned.
 
--W3C Markup Validator ![HTML](/assets/readme-files/htmlvalidated.png)
+-W3C Markup Validator ![HTML](/static/readme_files/HtmlvalidationP4.png)
 
--W3C CSS Validator ![CSS](/assets/readme-files/cssValidated.png)
+-W3C CSS Validator ![CSS](/static/readme_files/cssValidationP4.png)
 
--JSHint javaSrcipt Validator ![JS](/assets/readme-files/JSValidated.png)
+-PEP8 Python Validator ![PY](/static/readme_files/PyvalidationP4.png)
+                         [PY](/static/readme_files/PyvalidationP4b.png)
+                         [PY](/static/readme_files/PyvalidationP4c.png)
+-Jshint JS Validator  detected a couple of warnings but no error.![JS](/static/readme_files/JSvalidationP4.png)
 
 
 ## Deployment
