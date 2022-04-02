@@ -96,6 +96,9 @@ Other types pf bugs detected were related to typos and indentation problems, the
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wikipedia")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wikipedia")
 - [JS](https://en.wikipedia.org/wiki/JavaScript "Link to JS Wikipedia")
+- [PY](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to PY Wikipedia")
+- []
+
 https://www.python.org/
 
 
