@@ -41,6 +41,7 @@ def loginPage(request):
     return render(request, 'beautypal/login_register.html', context)
 
 
+
 def logoutUser(request):
     logout(request)
     return redirect('home')
@@ -60,11 +61,11 @@ def registerPage(request):
         else:
             messages.error(request, 'An error occurred during registration')
 
-    return render(request, 'beautypal/login_register.html', {'form' : form})
+    return render(request, 'beautypal/login_register.html', {'form': form})
 
 
 def home(request):
-    q = request.GET.get('q') if request.GET.get('q') !=None else ''
+    q = request.GET.get('q') if request.GET.get('q') is not None else ''
 
     rooms = Room.objects.filter(
        Q(topic__name__icontains=q) |
@@ -76,8 +77,9 @@ def home(request):
     room_messages = Message.objects.filter(Q(room__topic__name__icontains=q))
 
     context = {'rooms': rooms, 'topics': topics,
-               'room_count' : room_count,'room_messages' : room_messages}
+               'room_count': room_count, 'room_messages': room_messages}
     return render(request, 'beautypal/home.html', context)
+
 
 def room(request, pk):
     room = Room.objects.get(id=pk)
@@ -93,9 +95,10 @@ def room(request, pk):
         room.participants.add(request.user)
         return redirect('room', pk=room.id)
 
-
-    context = {'room': room, 'room_messages' : room_messages, 'participants' : participants}
+        context = {'room': room, 'room_messages': room_messages,
+                   'participants': participants}
     return render(request, 'beautypal/room.html', context)
+
 
 
 def userProfile(request, pk):
@@ -118,7 +121,7 @@ def createRoom(request):
     if request.method == 'POST':
         topic_name = request.POST.get('topic')
         topic, created = Topic.objects.get_or_create(name=topic_name)
-        
+
         Room.objects.create(
             host=request.user,
             topic=topic,
@@ -127,7 +130,7 @@ def createRoom(request):
         )
         return redirect('home')
 
-    context = {'form': form, 'topics' : topics}
+    context = {'form': form, 'topics': topics}
     return render(request, 'beautypal/room_form.html', context)
     
     
@@ -152,10 +155,9 @@ def updateRoom(request, pk):
         room.description = request.POST.get('description')
         room.save()
         return redirect('home')
-    
-    context = {'form': form, 'topics' : topics, 'room' : room}
-    return render(request, 'beautypal/room_form.html', context)
 
+    context = {'form': form, 'topics': topics, 'room': room}
+    return render(request, 'beautypal/room_form.html', context)
 
 @login_required(login_url='login')
 def deleteRoom(request, pk):
@@ -180,8 +182,8 @@ def deleteMessage(request, pk):
     if request.method == 'POST':
         message.delete()
         return redirect('home')
-    return render(request, 'beautypal/delete.html', {'obj': message})   
-
+    return render(request, 'beautypal/delete.html', {'obj': message})
+  
 
 
 @login_required(login_url='login')
@@ -199,25 +201,15 @@ def updateUser(request):
 
 
 def topicsPage(request):
-    q = request.GET.get('q') if request.GET.get('q') != None else ''
+    q = request.GET.get('q') if request.GET.get('q') is not None else ''
     topics = Topic.objects.filter(name__icontains=q)
     return render(request, 'beautypal/topics.html', {'topics': topics})
 
+
 def activityPage(request):
     room_messages = Message.objects.all()
-    return render(request, 'beautypal/activity.html', {'room_messages': room_messages})
+    return render(request, 'beautypal/activity.html', {
+        'room_messages': room_messages})
 
-    #user = request.user
-    #form = UserForm(instance=user)
 
-    #if request.method == 'POST':
-        #form = UserForm(request.POST, request.FILES, instance=user)
-        #if form.is_valid():
-            #form.save()
-            #return redirect('user-profile', pk=user.id)
-
-    
-    
-
-    
     # Create your views here.
