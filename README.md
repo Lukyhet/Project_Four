@@ -61,15 +61,16 @@ The site counts with responsive design. ![Am I responsive](assets/readme_files/r
 
 </details>    
 
-To be able to materialize our idea for this project I used several tutorials and I discussed it  my mentor from Code Institute Antonio Rodriguez. And even though my idea was to make a booking website at the beginning I found interesting resources and guidance online to built a little social network, which was one of the options for the fourth project to aspire to the Diploma in Software Development at the Code Institute. At the end the decission was to take the challenge and build a basic social network  website about a topic that has a lot of followers and market possibilities. I looked up to several examples online to be able to build this website, specially Traversy Media youtube channel django course wich includes guidance on how to build this kind of full stack site. 
+To be able to materialize our idea for this project and get some needed direction as new developer I used several tutorials and discussed it my mentor from Code Institute Antonio Rodriguez. Even though my idea was to make a booking website at the beginning I found interesting resources and guidance online to built a little social network, which was one of the options for the fourth project to aspire to the Diploma in Software Development at the Code Institute and a more interesting challenge. At the end the decission was to build a basic social network website to discuss beauty, a topic that has a lot of followers and great market possibilities. I looked up to several examples online to be able to build this website, specially Traversy Media youtube channel django course wich includes guidance on how to build this kind of full stack site. 
 
 The mentioned example of inspirational and educational site is [Traversy Media - Python Django 7 Hour Course](https://www.youtube.com/watch?v=PtQiiknWUcI). 
+
 
 ### Design
 
 #### Colour Scheme
 
-The color palette was chosen by the developer based on the colors of the 'mirror icon' used as the logo of "BeautyPal", the background is dark purple inspired to give deepness and contrast to the other elements in the site, the other colors in the palette are a lighter shade of purple for the containers, blue for the accents and the search bar and coral pink for the button and other accents, the text lighter shades of grey came from the theme used as django allows such interesting features. We must say that the colors were also chosen from palettes by palette ideas shared by  [canvas.com](https://www.canva.com/colors/color-palettes/everest-springs/). This combination creates harmonious colour scheme with good contrast, and femenine notes. 
+Django allows to import themes, great features that were used in this project and adapted though, specially the color palette. The colors were chosen by the developer based on the hues of the 'mirror icon' used as the logo of "BeautyPal", the background is dark purple giving deepness and contrast to the other elements in the site. The rest of the colors in the palette are: A lighter shade of purple for the containers, blue for the accents and the search bar, and coral pink for the button and other accents, the text lighter shades of grey came from the theme. We must say that the colors hues and codes came from  palettes by palette ideas shared by  [canvas.com](https://www.canva.com/colors/color-palettes/everest-springs/). This combination creates harmonious colour scheme with good contrast, and femenine notes. 
 
 
 #### Typography
@@ -86,7 +87,8 @@ Other types pf bugs detected were related to typos and indentation problems, the
 
 
 ### Features to Implement in the future
-- **Sounds**
+
+- **Notifications**
      - Picture uploading would allow the users to personalize their profiles even more and would make it more "real" social network looking.
      - Notification service for interactions.
      
@@ -97,21 +99,17 @@ Other types pf bugs detected were related to typos and indentation problems, the
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wikipedia")
 - [JS](https://en.wikipedia.org/wiki/JavaScript "Link to JS Wikipedia")
 - [PY](https://en.wikipedia.org/wiki/Python_(programming_language) "Link to PY Wikipedia")
-- []
+- [DJANGO](https://en.wikipedia.org/wiki/Django_(web_framework) "Link to django Wikipedia"")
 
-https://www.python.org/
 
 
 ### Frameworks, Libraries & Programs Used
 
-- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
-    - Google fonts was used to import the font Lato to style.css file.
+
 - [GitPod](https://gitpod.io/ "Link to GitPod homepage")
      - GitPod was as workspace for writing code,
 - [GitHub](https://github.com/ "Link to GitHub")
      - GitHub is being used to store this repository.
-- [Flaticon](https://www.flaticon.com/ "Link to Flaticon"). 
-     - Flaticon was used to download a free .png icon for the trivia.
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used to check the responsiveness of the design.
 - [W3C](https://validator.w3.org/ "Markup Validation Service")
@@ -120,8 +118,15 @@ https://www.python.org/
      - W3C Was used to validate the CSS code.
 - [JShint](https://jshint.com/ "JShint")
      - JShint Was used to validate the JS code.
+- [Icons8](https://icons8.com/ "Link to Icons8 homepage")
+     - Icons8 was used to get icons for the Logo,
+- [Canva.com](https://www.canva.com/ "Link to canva homepage")
+     - Canva was used to get inspiration and codes for the colors in this website.
+- [stackoverflow.com](https://stackoverflow.com/ "Link to stackoverflow homepage")
+     - stackoverflow was used to research, find and fix bugs in this project.
 
-    
+
+
 ## Testing
 
 
@@ -136,41 +141,45 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 
 ## Deployment
 
-This project was deployed in Github [View the live project here](https://lukyhet.github.io/Repository-Two/).
+This project was deployed in GitHub [View the live project here](https://lukyhet.github.io/Project_Four/).
 
     
 ## Credits 
 
-### Content
+### Content and Code
 
-- Some of the questions used in the trivia were taken from 100 Fun Movie Trivia Questions (With Answers) to Stump All Your Film-Loving Friends available in:
+- The most important inspiration and guidance came from the Python Django 7 Hour Course by 
+Traversy Media available in YouTube in which the knowledgeable tutor goes through the basics of django while building a full stack social network for developers website. All the features mentioned in that course are not implemented in Beautypal.
 
-    - [Parade](https://parade.com/977752/samuelmurrian/movie-trivia/ "Link to Parade")
+- [Traversy Media course in YouTube](https://www.youtube.com/watch?v=PtQiiknWUcI     "Link to video course in Youtube").
 
-- The rest (majority) of the questions were created by the developer.
 
-### Code 
+Several other sources were consulted and their guides followed, for example:
 
-Several sources were consulted and their guides followed, for example:
 
-- The randomizer and other features were made following the guidelines of stackoverflow
-- [StackOverflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/ "Link to StackOverflow").
-- [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow page")
-- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page") 
+- To fix bugs and find alternatives:
+
+- [StackOverflow](https://stackoverflow.com/questions/65918550/how-to-solve-user-updating-problem-in-django "Link to StackOverflow").
+- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page").
+
+
+- To remeber and refresh some python concepts and fix indentation problems:
+- [Progamming with Mush/Youtube](https://www.youtube.com/watch?v=kqtD5dpn9C8 "Link to Youtube Python course").
+
 
 ### Media
 
-- The icon used for the logo was downloaded for free from [Flaticon](https://www.flaticon.es/ "Link to Flaticon") 
+- The icon used for the logo was downloaded for free from [Flaticon](https://icons8.com/ "Link to icons8.com") 
 - The images used in this README.md file were taken by the developer as printscreens or pictures.
 
 
 ## Acknowledgements
 
-- I want to thank and recognize the amazing job of my mentor Antonio Rodriguez who guided me and patiently taught me through the whole project process.
-- I also want to mention and thank John from student tutors at Code Institute for taking the time and explaining how to work through the warnings of the JS validator.
+- I want to thank and recognize the job of my mentor Antonio Rodriguez who has helped me understand and fix issues that came during the project's process.
+- I also want to mention and thank Christine Greaney-Kelley, Scott Kipp and Oisin Tohak from student tutors at Code Institute for taking the time and explaining how to work through the errors found while building this website.
 
 
-[Back to top](#Movie-Trivia!)
+[Back to top](#BeautyPal!)
 
 ***
 
