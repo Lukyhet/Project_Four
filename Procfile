@@ -1,1 +1,1 @@
-web: gunicorn beautypal.wsgi
+web: gunicorn my_site.wsgi
