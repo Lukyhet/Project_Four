@@ -96,8 +96,11 @@ def room(request, pk):
         room.participants.add(request.user)
         return redirect('room', pk=room.id)
 
-    context = {'room': room, 'room_messages': room_messages,
-                   'participants': participants}
+    context = {
+        'room': room, 
+        'room_messages': room_messages,
+        'participants': participants
+        }
     return render(request, 'beautypal/room.html', context)
 
 
