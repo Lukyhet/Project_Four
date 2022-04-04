@@ -76,8 +76,8 @@ a {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  transition: all ease-in-out 0.3s;
   padding: 1rem 2rem;
+  transition: all ease-in-out 0.3s;
   border-radius: 5px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
   font-weight: 500;
