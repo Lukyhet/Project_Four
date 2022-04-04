@@ -1,7 +1,7 @@
 # BeautyPal
 
 
-![BeautyPal](static/Readme_images/userview.png)
+![BeautyPal](static/readme_images/userview.png)
 
 
 
@@ -20,11 +20,11 @@ Our full stack project  is called 'BeautyPal'. It was made to provide a speciali
 
 </details>
 
-Movie Trivia was created for social purposes. It has groups created to discuss different topics related to beauty, like haircare, skincare, best products, etc.  The topic browse and activity feed are designed to facilitate the easy access to the information shared inside the groups. The users can create a username and password wich allows them to write messages, edit them, delete them and engage in interaction with other participants.
+BeautyPal was created for social connection purposes. It has groups created to discuss different topics related to beauty, like haircare, skincare, best products, etc.  The topic browse and activity feed are designed to facilitate the easy access to the information shared inside the groups. The users can create a username and password wich allows them to write messages, edit them, delete them and engage in interaction with other participants.
 
 Beautypal was made as the fourth milestone project to achieve the Diploma in Software Development at the Code Institute. 
 
-The purpose of this project is the Presentation of our first full stack project, and the main goal is to build an interactive site including both front-end and back-end that responds to the users actions, allowing them to actively engage with our website´s data from any electronic dispositive with internet access.
+The purpose of this project is the presentation of our first full stack project, and the main goal is to build an interactive site including both front-end and back-end that responds to the users actions, allowing them to actively engage with our website´s data from any electronic dispositive with internet access.
 
 
 
@@ -60,7 +60,7 @@ All the buttons, the questions and table are easily identifiable by the contrast
 
 #### Responsiveness
 
-The site counts with responsive design. ![Am I responsive](static/Readme_images/responsiveness.png)
+The site counts with responsive design. ![Am I responsive](static/readme_images/responsiveness.png)
 
 
 
@@ -142,14 +142,14 @@ Other types of bugs detected were related to typos and indentation problems, the
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate all the code of this repository and every warning was corrected until the code came up clean in every validator mentioned.
 
--W3C Markup Validator ![HTML](/static/Readme_images/HtmlvalidationP4.png)
+-W3C Markup Validator ![HTML](/static/readme_images/HtmlvalidationP4.png)
 
--W3C CSS Validator ![CSS](/static/Readme_images/cssValidationP4.png)
+-W3C CSS Validator ![CSS](/static/readme_images/cssValidationP4.png)
 
--PEP8 Python Validator ![PY](/static/Readme_images/PyvalidationP4.png)
-                         [PY](/static/Readme_images/PyvalidationP4b.png)
-                         [PY](/static/Readme_images/PyvalidationP4c.png)
--Jshint JS Validator  detected a couple of warnings but no error.![JS](/static/Readme_images/JSvalidationP4.png)
+-PEP8 Python Validator ![PY](/static/readme_images/PyvalidationP4.png)
+                         [PY](/static/readme_images/PyvalidationP4b.png)
+                         [PY](/static/readme_images/PyvalidationP4c.png)
+-Jshint JS Validator  detected a couple of warnings but no error.![JS](/static/readme_images/JSvalidationP4.png)
 
 
 ## Deployment
@@ -159,10 +159,9 @@ This project was deployed in GitHub [View the live project here](https://lukyhet
     
 ## Credits 
 
-### Content and Code
+### Content
 
-- The most important inspiration and guidance came from the Python Django Course by 
-Traversy Media (available in YouTube) The theme used by the Traversy Media Course in YouTube is used in this website as well as it is a feature compatible with django. All the elements were free to use.
+- I must attribut the traversy media course in Youtube for they provided me with the most important inspiration, guidance and theme used to build this app as it is a feature compatible with django. All the elements were free to use.
 
 - [Traversy Media course in YouTube](https://www.youtube.com/watch?v=PtQiiknWUcI     "Link to video course in Youtube").
 
@@ -176,14 +175,15 @@ Several other sources were consulted and their guides followed, for example:
 - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page").
 
 
-- To remeber and refresh some python concepts and fix indentation problems:
+
+- To refresh python essential concepts and fix indentation problems:
 - [Progamming with Mush/Youtube](https://www.youtube.com/watch?v=kqtD5dpn9C8 "Link to Youtube Python course").
 
 
 ### Media
 
 - The icon used for the logo was downloaded for free from [Icons8](https://icons8.com/ "Link to icons8.com") 
-- The images used in this README.md file were taken by the developer as printscreens or pictures, the little avatars for the users came with the theme instaled.
+- The images used in this README.md file were taken by the developer as printscreens, the little avatars for the users came with the theme instaled and the original source is [randomuser.me](https://randomuser.me/photos)
 
 
 ## Acknowledgements
