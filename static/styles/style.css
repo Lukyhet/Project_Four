@@ -1,6 +1,3 @@
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
@@ -20,16 +17,18 @@
 /*========== base styles ==========*/
 
 * {
-  font-family: "DM Sans", -apple-system, Roboto, "Open Sans", sans-serif;
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
+  /* color: inherit; */
   font-size: inherit;
 }
 
 html {
-  font-size: 56%;
+  font-size: 56.25%;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -63,6 +62,7 @@ a {
   text-decoration: none;
 }
 
+/*========== components ==========*/
 .container {
   max-width: 120rem;
   width: 90%;
@@ -139,12 +139,10 @@ a {
 }
 
 .avatar img {
-
-  object-position: center;
-  border-radius: 50%;
   display: block;
+  border-radius: 50%;
   object-fit: cover;
- 
+  object-position: center;
 }
 
 .avatar::after {
@@ -195,14 +193,14 @@ a {
 
 .avatar.avatar--large:after {
   width: 1rem;
-  right: 3.5px;
   height: 1rem;
   bottom: 2px;
+  right: 3.5px;
 }
 
 .scroll::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: rgb(53, 42, 54);
+  background-color: rgb(41, 41, 46);
 }
 
 .scroll::-webkit-scrollbar-thumb {
@@ -217,7 +215,7 @@ a {
   right: 0.5rem;
   background: var(--color-dark-light);
   border-radius: 5px;
-  box-shadow: 1px 1px 3px 1px rgba(24, 23, 23, 0.15);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   display: none;
 }
@@ -263,7 +261,9 @@ a {
   }
 }
 
- /**Header**/
+/*==============================
+=>  Header Section
+================================*/
 
 .header {
   padding: 1.5rem;
@@ -283,8 +283,8 @@ a {
 }
 
 .header__logo > img {
-  height: 4rem;
-  width: 4rem;
+  height: 3.2rem;
+  width: 3.2rem;
 }
 
 .header__logo > h1 {
@@ -298,8 +298,6 @@ a {
   padding: 1.3rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   gap: 1rem;
   border-radius: 4px;
 }
@@ -476,8 +474,9 @@ a {
   }
 }
 
-/*Topics
-*/
+/*==============================
+=>  Topics
+================================*/
 
 .form__group {
   margin-bottom: 2rem;
@@ -616,9 +615,9 @@ a {
   }
 }
 
-/*
+/*==============================
 =>  Room List
-*/
+================================*/
 
 .roomList__header {
   display: flex;
@@ -681,7 +680,7 @@ a {
 }
 
 .roomListRoom__content {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .roomListRoom__content a {
@@ -1163,6 +1162,3 @@ a {
   font-weight: 500;
   color: var(--color-main);
 }
-
-
-
