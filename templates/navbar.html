@@ -1,3 +1,5 @@
+
+<!--code base from traversy Media - Python Django 7 Hour Course](https://www.youtube.com/watch?v=PtQiiknWUcI)   -->
 {% load static %}
 
 <header class="header header--loggedIn">
@@ -20,7 +22,6 @@
         <nav class="header__menu">
 
 
-            <!-- Logged In -->
             {% if request.user.is_authenticated %}
             <div class="header__user">
                 <a href="{% url 'update-user' %}">
@@ -36,10 +37,11 @@
                     </svg>
                 </button>
             </div>
+            
 
             {% else %}
 
-            <!-- Not Logged In -->
+            
             <a href="{% url 'login' %}">
                 <img src="{% static 'images/avatar.svg' %}" alt = "an avatar"/>
                 <p>Login</p>
