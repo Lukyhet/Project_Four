@@ -3,7 +3,7 @@
 <header class="header header--loggedIn">
     <div class="container">
         <a href="{% url 'home' %}" class="header__logo">
-            <img src="{% static 'images/mirror.png' %}" alt = "image of a samll mirror"/>
+            <img src="{% static 'images/mirror.png' %}" alt = "image of a small mirror"/>
             <h1>BeautyPal</h1>
         </a>
         <form class="header__search" method="GET" action="{% url 'home' %}">
@@ -25,7 +25,7 @@
             <div class="header__user">
                 <a href="{% url 'update-user' %}">
                     <div class="avatar avatar--medium active">
-                        <img src="https://randomuser.me/api/portraits/men/37.jpg" alt = "picture of random man" />
+                        <img src="{% static 'images/salon.png' %}" alt = "picture of salon"/>
                     </div>
                     <p>{{request.user.username}} <span>@{{request.user.username}}</span></p>
                 </a>

@@ -1,7 +1,7 @@
 # BeautyPal
 
 
-![BeautyPal] (static/readme_files-userview/.png) 
+![BeautyPal](static/Readme_images/userview.png)
 
 
 
@@ -15,7 +15,7 @@ Our full stack project  is called 'BeautyPal'. It was made to provide a speciali
 
 <details>
 
-![Image of the BeautyPal](static/readme_files-userview/.png)
+![Image of the BeautyPal](/static/Readme_images/userview/.png)
 
 
 </details>
@@ -60,7 +60,7 @@ All the buttons, the questions and table are easily identifiable by the contrast
 
 #### Responsiveness
 
-The site counts with responsive design. ![Am I responsive](assets/readme_files/responsiveness.png)
+The site counts with responsive design. ![Am I responsive](static/Readme_images/responsiveness.png)
 
 
 
@@ -87,9 +87,11 @@ The typography displayed in the website is given by the theme installed accordin
 
 ## Debugging
 
-Several bugs were detected by developer tools. The bigest one happened when trying to alter the models and settings given by django to create the user and superuser, to try and fix the error we went to stack [StackOverflow](https://stackoverflow.com/questions/2450954/ but it could not be fixed, wich led to the duplication of the repository by cloning it causing other problems due to the need to reinstall django, environment and other tools. Code Institute's tutor, Christine Greaney-Kelley helped was fundamental to create a new workspace form the original repository and install some of the tools needed, without loosing our code.
+Several bugs were detected by developer tools. The bigest one happened when trying to alter the models and settings given by django to create the user and superuser, Christine Greaney-Kelley helped was pivotal to fix this issue.
 
-Other types pf bugs detected were related to typos and indentation problems, the code was fixed by correcting it.
+The biggest bug was the deployment to [heroku.com](https://heroku.com/ "Link to Heroku page"). It included several issues and took a lot of effort and help from the tutoring service from CI. The bugs went from minor indentation problems to Heroku not uploading the database and only being able to run the empty app, to fix this issue was temporarely imposible until Heroku sent me an email letting me know that they were working on "maintenance for the database", the full data was available when that process was finished. Another bug was fixed setting  DEBUG to "True" in settings.py because without it the app did not deploy the css features.
+
+Other types of bugs detected were related to typos and indentation problems, the code was fixed by correcting it.
 
 
 
@@ -98,6 +100,7 @@ Other types pf bugs detected were related to typos and indentation problems, the
 - **Notifications**
      - Picture uploading would allow the users to personalize their profiles even more and would make it more "real" social network looking.
      - Notification service for interactions.
+     - Upload files and pictures would bring more vitality to the app.
      
 
 
@@ -139,14 +142,14 @@ Other types pf bugs detected were related to typos and indentation problems, the
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate all the code of this repository and every warning was corrected until the code came up clean in every validator mentioned.
 
--W3C Markup Validator ![HTML](/static/readme_files/HtmlvalidationP4.png)
+-W3C Markup Validator ![HTML](/static/Readme_images/HtmlvalidationP4.png)
 
--W3C CSS Validator ![CSS](/static/readme_files/cssValidationP4.png)
+-W3C CSS Validator ![CSS](/static/Readme_images/cssValidationP4.png)
 
--PEP8 Python Validator ![PY](/static/readme_files/PyvalidationP4.png)
-                         [PY](/static/readme_files/PyvalidationP4b.png)
-                         [PY](/static/readme_files/PyvalidationP4c.png)
--Jshint JS Validator  detected a couple of warnings but no error.![JS](/static/readme_files/JSvalidationP4.png)
+-PEP8 Python Validator ![PY](/static/Readme_images/PyvalidationP4.png)
+                         [PY](/static/Readme_images/PyvalidationP4b.png)
+                         [PY](/static/Readme_images/PyvalidationP4c.png)
+-Jshint JS Validator  detected a couple of warnings but no error.![JS](/static/Readme_images/JSvalidationP4.png)
 
 
 ## Deployment
@@ -158,8 +161,8 @@ This project was deployed in GitHub [View the live project here](https://lukyhet
 
 ### Content and Code
 
-- The most important inspiration and guidance came from the Python Django 7 Hour Course by 
-Traversy Media available in YouTube in which the knowledgeable tutor goes through the basics of django while building a full stack social network for developers website. All the features mentioned in that course are not implemented in Beautypal.
+- The most important inspiration and guidance came from the Python Django Course by 
+Traversy Media (available in YouTube) The theme used by the Traversy Media Course in YouTube is used in this website as well as it is a feature compatible with django. All the elements were free to use.
 
 - [Traversy Media course in YouTube](https://www.youtube.com/watch?v=PtQiiknWUcI     "Link to video course in Youtube").
 
@@ -179,8 +182,8 @@ Several other sources were consulted and their guides followed, for example:
 
 ### Media
 
-- The icon used for the logo was downloaded for free from [Flaticon](https://icons8.com/ "Link to icons8.com") 
-- The images used in this README.md file were taken by the developer as printscreens or pictures.
+- The icon used for the logo was downloaded for free from [Icons8](https://icons8.com/ "Link to icons8.com") 
+- The images used in this README.md file were taken by the developer as printscreens or pictures, the little avatars for the users came with the theme instaled.
 
 
 ## Acknowledgements
