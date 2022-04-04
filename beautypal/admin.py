@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+# Register your models.
 from .models import Room, Topic, Message
 
 admin.site.register(Room)
